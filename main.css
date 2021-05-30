@@ -1,7 +1,7 @@
-*{
+body{
     margin: 0%;
     padding: 0%;
-    background-color: rgb(27, 10, 58);
+    background-color: rgb(14, 5, 29);
 }
 .flex
 {
@@ -11,24 +11,19 @@
 }
 .nav-bar
 {
-    margin: 10px 0px;
+    padding-top: 10px;;
     justify-content: space-between;
-    padding-left: 20px;
-    
+    flex-wrap: no-wrap;
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 0px;
 }
 #user
 {
     border-radius: 100%;
 }
-.nav-bar input[type=text] {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: 1px solid whitesmoke;
-    border-radius: 25px;
-    font-size: 17px;
-  }
+
 .box1
 {
     width: 40%;
@@ -44,4 +39,47 @@
 {
     font-size: 20px;
     color: whitesmoke;
+}
+.search-bar {
+	width: 60%;
+	position: relative;
+    border-radius: 18px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+    display: inline-block;
+    background-color: whitesmoke;
+}
+.search-ico {
+	color: rgba(34, 33, 33, 0.5);
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    
+    background-color: whitesmoke;
+}
+
+.mic-ico {
+	color: rgba(36, 33, 33, 0.5);
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    
+    background-color: whitesmoke;
+}
+
+input:focus {
+	outline: none;
 }
