@@ -2,6 +2,8 @@ body{
     margin: 0%;
     padding: 0%;
     background-color: rgb(14, 5, 29);
+    max-height: 100vh;
+    overflow: hidden;
 }
 .flex
 {
@@ -18,6 +20,8 @@ body{
     width: auto;
     padding-left: 10px;
     padding-right: 0px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 #user
 {
@@ -26,13 +30,17 @@ body{
 
 .box1
 {
-    width: 40%;
+    flex:10%;
     justify-content: space-between;
    
 }
-.box2
+.box2{
+    flex: 60%;
+    justify-content: center;
+}
+.box3
 {
-    width: 30%;
+    flex: 30%;
     justify-content: space-evenly;
 }
 #head1
@@ -82,4 +90,68 @@ body{
 
 input:focus {
 	outline: none;
+}
+.section
+{
+    box-sizing: border-box;
+    background-color: rgb(12, 12, 27);
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: flex-start;
+}
+.left
+{
+    flex: 70%;
+    background-color: rgb(42, 151, 69);
+    height: 90vh;
+    display: inline-block;
+    overflow: scroll;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.right
+{
+    height: 90vh;
+    background-color: darkmagenta;
+    flex: 30%;
+    display: inline-block;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.left::-webkit-scrollbar {
+display: none;
+}
+.right::-webkit-scrollbar {
+display: none;
+}
+
+.item
+{
+    display: inline-block;
+    height: 20vh;
+    background-color: darkblue;
+    width: 100%;
+    
+}
+.item-1
+{
+    display: inline-block;
+    height: 20vh;
+    background-color: rgb(201, 235, 238);
+    width: 100%;
+}
+.fav
+{
+    display: inline-block;
+    height: 45vh;
+    background-color: rgb(134, 108, 228);
+    width: 100%;
+}
+.latest-release
+{
+    display: inline-block;
+    height: 40vh;
+    background-color: rgb(145, 163, 241);
+    width: 100%;
 }
