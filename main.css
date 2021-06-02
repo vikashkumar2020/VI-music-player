@@ -11,9 +11,11 @@ body{
 }
 span
 {
-    font-size: 1em;
+    font-size: 1.2vw;
     font-weight: 300;
     color: whitesmoke;
+    display: inline-block;
+    margin: 1rem;
 }
 .flex
 {
@@ -30,7 +32,7 @@ span
     width: auto;
     padding-left: 10px;
     padding-right: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 5vh;
     box-sizing: border-box;
 }
 #user
@@ -113,7 +115,7 @@ input:focus {
 {
     flex: 70%;
     border: 1px solid whitesmoke;
-    height: 90vh;
+    height: 85vh;
     display: inline-block;
     overflow: scroll;
     box-sizing: border-box;
@@ -121,8 +123,8 @@ input:focus {
 }
 .right
 {
-    height: 90vh;
-    background-color: darkmagenta;
+    height: 85vh;
+    border: 1px solid whitesmoke;
     flex: 30%;
     display: inline-block;
     overflow-y: scroll;
@@ -147,7 +149,7 @@ display: none;
 {
     display: inline-flex;
     height: 20vh;
-    background-color: rgb(201, 235, 238);
+    border:1px solid whitesmoke;
     width: 100%;
 }
 .fav
